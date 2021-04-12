@@ -41,22 +41,10 @@ var arrayStudenti= [
 for (var i=0; i< arrayStudenti.length;i++){
     var singleStudent = arrayStudenti[i];
 
-    console.log(singleStudent);
+    
+    console.log('Nome Studente: '+ singleStudent.nome);
+    console.log('Cognome Studente: ' + singleStudent.cognome);
 
-        
-    for(var chiave in singleStudent){
-        
-        if(chiave == 'nome'){
-        console.log( 'Nome:'+ singleStudent[chiave]);
-        } 
-    }
-
-    for(var chiave2 in singleStudent){
-        if(chiave2 == 'cognome'){
-        console.log('Cognome: '+ singleStudent[chiave2]);
-
-        }
-    }
 }
 
 // Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
